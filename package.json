@@ -4,12 +4,17 @@
   "main": "dist/guimine.js",
   "type": "module",
   "scripts": {
-    "start": "node dist/guimine.js"
+  "build": "tsc",
+  "start": "npm run build && node dist/guimine.js"
   },
   "dependencies": {
     "mineflayer": "^4.23.0",
     "mineflayer-pathfinder": "^2.4.5",
-    "node-fetch": "^3.2.0",
+    "node-fetch": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
 }
